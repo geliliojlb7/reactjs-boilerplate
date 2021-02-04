@@ -1,73 +1,73 @@
 #components-layout-demo-custom-trigger .trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 24px;
-  cursor: pointer;
-  transition: color 0.3s;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 #components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
+    color: #1890ff;
 }
 
 #components-layout-demo-custom-trigger .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 16px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px;
 }
 
 .site-layout .site-layout-background {
-  background: #fff;
-  /* height: 100vh; */
+    background: #fff;
+    /* height: 100vh; */
 }
 
 header {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  background: transparent !important; 
-  padding: 0 2em !important;
-  height: 64px;
-  z-index: 1000;
-  align-items: center;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background: transparent !important;
+    padding: 0 2em !important;
+    height: 64px;
+    z-index: 1000;
+    align-items: center;
 }
 
 .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 16px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px;
 }
 
 .sider {
-  position: fixed;
-  background: #EDF2FB;
-  border-right: 0.5px solid #D7E3FD;
-  min-width: 250px !important;
-  max-width: 250px !important;
-  width: 250px !important;
+    position: fixed;
+    background: #edf2fb;
+    border-right: 0.5px solid #d7e3fd;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    width: 250px !important;
 }
 
 .sider > div {
-  height: 100vh;
+    height: 100vh;
 }
 
 .site-layout-background {
-  padding: 24px;
-  min-height: 100vh;
-  margin-top: 64px;
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 64px;
 }
 
 .site-layout-2 {
-  margin-left: 250px;
-  background: #EDF2FB;
+    margin-left: 250px;
+    background: #edf2fb;
 }
 
 .site-layout-header {
-  margin-left: 250px;
+    margin-left: 250px;
 }
 
 .site-layout-footer {
-  text-align: center;
-  margin-left: 250px;
-  background: #EDF2FB;
+    text-align: center;
+    margin-left: 250px;
+    background: #edf2fb;
 }

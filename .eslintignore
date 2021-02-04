@@ -1,0 +1,7 @@
+# NODE
+node_modules/
+*.test.js
+
+# INTERNALS
+build
+public
