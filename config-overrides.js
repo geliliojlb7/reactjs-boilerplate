@@ -15,7 +15,7 @@ module.exports = override(
             "@info-color": "@primary-color",
             "@success-color": "@green-6",
             "@processing-color": "@blue-6",
-            "@error-color": "@red-5",
+            "@error-color": "@red-3",
             "@highlight-color": "@red-5",
             "@warning-color": "@gold-6",
             "@normal-color": "#d9d9d9",
