@@ -9,6 +9,8 @@ module.exports = override(
     addLessLoader({
         javascriptEnabled: true,
         modifyVars: {
+            "@font-family":
+                "'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol','Noto Color Emoji'",
             // -------- Colors -----------
             "@info-color": "@primary-color",
             "@success-color": "@green-6",
@@ -18,7 +20,7 @@ module.exports = override(
             "@warning-color": "@gold-6",
             "@normal-color": "#d9d9d9",
             "@white": "#fff",
-            "@black": "#000",
+            "@black": "#4e4c67",
             "@primary-color": "#abc4ff",
             "@active-color": "#edf2fb",
 

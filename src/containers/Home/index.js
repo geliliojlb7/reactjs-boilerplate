@@ -1,6 +1,7 @@
 import React from "react";
-import { Button } from "antd";
+import { Button, Typography } from "antd";
 
+const { Title } = Typography;
 const Home = () => (
     <div>
         <Button type="dashed" shape="round">
@@ -21,6 +22,12 @@ const Home = () => (
         <Button type="text" shape="round">
             Text
         </Button>
+        <br />
+        <Title>h1. Ant Design</Title>
+        <Title level={2}>h2. Ant Design</Title>
+        <Title level={3}>h3. Ant Design</Title>
+        <Title level={4}>h4. Ant Design</Title>
+        <Title level={5}>h5. Ant Design</Title>
     </div>
 );
 
