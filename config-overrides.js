@@ -142,6 +142,25 @@ module.exports = override(
             "@table-expanded-row-bg": "#fbfbfb",
             "@table-border-color": "@border-color-split",
             "@table-border-radius-base": "@border-radius-base",
+
+            // Input
+            // ---
+            "@input-placeholder-color": "fade(@text-color-secondary, 25%)",
+            "@input-color": "@text-color",
+            "@input-icon-color": "@input-color",
+            "@input-border-color": "@border-color-base",
+            "@input-bg": "@component-background",
+            "@input-number-hover-border-color": "@input-hover-border-color",
+            "@input-number-handler-active-bg": "#f4f4f4",
+            "@input-number-handler-hover-bg": "@primary-5",
+            "@input-number-handler-bg": "@component-background",
+            "@input-number-handler-border-color": "@border-color-base",
+            "@input-addon-bg": "@background-color-light",
+            "@input-hover-border-color": "@primary-5",
+            "@input-disabled-bg": "@disabled-bg",
+            "@input-outline-offset": "0 0",
+            "@input-icon-hover-color": "fade(@black, 85%)",
+            "@input-disabled-color": "@disabled-color",
         },
     }),
 );
