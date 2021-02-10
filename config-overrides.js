@@ -125,6 +125,23 @@ module.exports = override(
             "@btn-default-ghost-color": "@component-background",
             "@btn-default-ghost-bg": "transparent",
             "@btn-default-ghost-border": "@component-background",
+
+            // Table
+            // --
+            "@table-bg": "@component-background",
+            "@table-header-bg": "@background-color-light",
+            "@table-header-color": "@heading-color",
+            "@table-header-sort-bg": "@background-color-base",
+            "@table-body-sort-bg": "#fafafa",
+            "@table-row-hover-bg": "@background-color-light",
+            "@table-selected-row-color": "inherit",
+            "@table-selected-row-bg": "@primary-1",
+            "@table-body-selected-sort-bg": "@table-selected-row-bg",
+            "@table-selected-row-hover-bg":
+                "darken(@table-selected-row-bg, 2%)",
+            "@table-expanded-row-bg": "#fbfbfb",
+            "@table-border-color": "@border-color-split",
+            "@table-border-radius-base": "@border-radius-base",
         },
     }),
 );

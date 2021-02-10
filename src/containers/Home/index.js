@@ -1,7 +1,39 @@
 import React from "react";
-import { Button, Typography } from "antd";
+import { Button, Typography, Table } from "antd";
 
 const { Title } = Typography;
+const dataSource = [
+    {
+        key: "1",
+        name: "Mike",
+        age: 32,
+        address: "10 Downing Street",
+    },
+    {
+        key: "2",
+        name: "John",
+        age: 42,
+        address: "10 Downing Street",
+    },
+];
+
+const columns = [
+    {
+        title: "Name",
+        dataIndex: "name",
+        key: "name",
+    },
+    {
+        title: "Age",
+        dataIndex: "age",
+        key: "age",
+    },
+    {
+        title: "Address",
+        dataIndex: "address",
+        key: "address",
+    },
+];
 const Home = () => (
     <div>
         <Button type="dashed" shape="round">
@@ -47,6 +79,7 @@ const Home = () => (
         <Title level={3}>h3. Ant Design</Title>
         <Title level={4}>h4. Ant Design</Title>
         <Title level={5}>h5. Ant Design</Title>
+        <Table dataSource={dataSource} columns={columns} size="small" />
     </div>
 );
 
