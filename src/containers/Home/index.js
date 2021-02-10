@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Typography, Table, Input } from "antd";
+import Checkbox from "antd/lib/checkbox/Checkbox";
 
 const { Title } = Typography;
 const dataSource = [
@@ -79,6 +80,8 @@ const Home = () => (
         <Title level={3}>h3. Ant Design</Title>
         <Title level={4}>h4. Ant Design</Title>
         <Title level={5}>h5. Ant Design</Title>
+        <Checkbox>Test</Checkbox>
+        <Checkbox disabled>Test</Checkbox>
         <Input placeholder="test" />
         <Input placeholder="test" disabled />
         <Table dataSource={dataSource} columns={columns} size="small" />

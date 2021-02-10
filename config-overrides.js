@@ -161,6 +161,14 @@ module.exports = override(
             "@input-outline-offset": "0 0",
             "@input-icon-hover-color": "fade(@black, 85%)",
             "@input-disabled-color": "@disabled-color",
+
+            // Checkbox
+            "@checkbox-size": "16px",
+            "@checkbox-color": "@primary-color",
+            "@checkbox-check-color": "@component-background",
+            "@checkbox-check-bg": "@checkbox-check-color",
+            "@checkbox-border-width": "@border-width-base",
+            "@checkbox-group-item-margin-right": "8px",
         },
     }),
 );
