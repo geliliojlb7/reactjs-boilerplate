@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Typography, Table, Input } from "antd";
+import { Button, Typography, Table, Input, Radio } from "antd";
 import Checkbox from "antd/lib/checkbox/Checkbox";
 
 const { Title } = Typography;
@@ -82,6 +82,11 @@ const Home = () => (
         <Title level={5}>h5. Ant Design</Title>
         <Checkbox>Test</Checkbox>
         <Checkbox disabled>Test</Checkbox>
+        <Radio>Test</Radio>
+        <Radio disabled>Test</Radio>
+        <Radio disabled checked>
+            Test
+        </Radio>
         <Input placeholder="test" />
         <Input placeholder="test" disabled />
         <Table dataSource={dataSource} columns={columns} size="small" />

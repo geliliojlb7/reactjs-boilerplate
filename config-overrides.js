@@ -169,6 +169,25 @@ module.exports = override(
             "@checkbox-check-bg": "@checkbox-check-color",
             "@checkbox-border-width": "@border-width-base",
             "@checkbox-group-item-margin-right": "8px",
+
+            // Radio
+            "@radio-size": "16px",
+            "@radio-top": "0px",
+            "@radio-border-width": "1px",
+            "@radio-dot-size": "@radio-size - 8px",
+            "@radio-dot-color": "@primary-color",
+            "@radio-dot-disabled-color": "fade(@black, 20%)",
+            "@radio-solid-checked-color": "@component-background",
+
+            // Radio buttons
+            "@radio-button-bg": "@btn-default-bg",
+            "@radio-button-checked-bg": "@btn-default-bg",
+            "@radio-button-color": "@btn-default-color",
+            "@radio-button-hover-color": "@primary-5",
+            "@radio-button-active-color": "@primary-7",
+            "@radio-disabled-button-checked-bg": "tint(@black, 90%)",
+            "@radio-disabled-button-checked-color": "@disabled-color",
+            "@radio-wrapper-margin-right": "8px",
         },
     }),
 );
