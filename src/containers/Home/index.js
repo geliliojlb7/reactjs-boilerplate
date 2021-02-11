@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, Typography, Table, Input, Radio } from "antd";
+import { Button, Typography, Table, Input, Radio, Select } from "antd";
 import Checkbox from "antd/lib/checkbox/Checkbox";
 
 const { Title } = Typography;
+const { Option } = Select;
 const dataSource = [
     {
         key: "1",
@@ -89,6 +90,11 @@ const Home = () => (
         </Radio>
         <Input placeholder="test" />
         <Input placeholder="test" disabled />
+        <Select style={{ width: "250px" }}>
+            <Option>Test1</Option>
+            <Option disabled>Test2</Option>
+            <Option>Test3</Option>
+        </Select>
         <Table dataSource={dataSource} columns={columns} size="small" />
     </div>
 );

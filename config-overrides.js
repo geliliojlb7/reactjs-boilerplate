@@ -24,6 +24,14 @@ module.exports = override(
             "@primary-color": "#abc4ff",
             "@active-color": "#edf2fb",
 
+            "@background-color-light": "hsv(0, 0, 98%)", // background of header and selected item
+            "@background-color-base": "fade(@active-color, 50%)", // Default grey background color
+
+            // The background colors for active and hover states for things like
+            // list items or table cells.
+            "@item-active-bg": "@primary-1",
+            "@item-hover-bg": "fade(@active-color, 15%)",
+
             "@text-color": "fade(@black, 85%)",
             "@text-color-secondary": "fade(@black, 35%)",
             "@text-color-inverse": "@white",
@@ -188,6 +196,22 @@ module.exports = override(
             "@radio-disabled-button-checked-bg": "tint(@black, 90%)",
             "@radio-disabled-button-checked-color": "@disabled-color",
             "@radio-wrapper-margin-right": "8px",
+
+            // Select
+            // ---
+            "@select-border-color": "@border-color-base",
+            "@select-item-selected-color": "@text-color",
+            "@select-dropdown-bg": "@component-background",
+            "@select-item-selected-bg": "@primary-1",
+            "@select-item-active-bg": "@item-hover-bg",
+            "@select-background": "@component-background",
+            "@select-clear-background": "@select-background",
+            "@select-selection-item-bg": "@background-color-base",
+            "@select-selection-item-border-color": "@border-color-split",
+            "@select-multiple-disabled-background": "@input-disabled-bg",
+            "@select-multiple-item-disabled-color": "#bfbfbf",
+            "@select-multiple-item-disabled-border-color":
+                "@select-border-color",
         },
     }),
 );
