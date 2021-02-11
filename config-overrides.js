@@ -252,6 +252,11 @@ module.exports = override(
             "@modal-footer-border-width": "@border-width-base",
             "@modal-mask-bg": "fade(@black, 45%)",
             "@modal-confirm-body-padding": "32px 32px 24px",
+
+            // Message
+            // ---
+            "@message-notice-content-padding": "10px 16px",
+            "@message-notice-content-bg": "@component-background",
         },
     }),
 );

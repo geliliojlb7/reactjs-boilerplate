@@ -8,6 +8,7 @@ import {
     Select,
     DatePicker,
     Modal,
+    message,
 } from "antd";
 import Checkbox from "antd/lib/checkbox/Checkbox";
 
@@ -60,6 +61,18 @@ const Home = () => {
 
     const handleCancel = () => {
         setIsModalVisible(false);
+    };
+
+    const success = () => {
+        message.success("This is a success message");
+    };
+
+    const error = () => {
+        message.error("This is an error message");
+    };
+
+    const warning = () => {
+        message.warning("This is a warning message");
     };
     return (
         <div>
@@ -125,6 +138,9 @@ const Home = () => {
                 showTime={{ format: "HH:mm" }}
                 format="YYYY-MM-DD HH:mm"
             />
+            <Button onClick={success}>Success</Button>
+            <Button onClick={error}>Error</Button>
+            <Button onClick={warning}>Warning</Button>
             <Table dataSource={dataSource} columns={columns} size="small" />
             <Modal
                 title="Basic Modal"
