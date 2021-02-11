@@ -1,9 +1,18 @@
 import React from "react";
-import { Button, Typography, Table, Input, Radio, Select } from "antd";
+import {
+    Button,
+    Typography,
+    Table,
+    Input,
+    Radio,
+    Select,
+    DatePicker,
+} from "antd";
 import Checkbox from "antd/lib/checkbox/Checkbox";
 
 const { Title } = Typography;
 const { Option } = Select;
+const { RangePicker } = DatePicker;
 const dataSource = [
     {
         key: "1",
@@ -95,6 +104,8 @@ const Home = () => (
             <Option disabled>Test2</Option>
             <Option>Test3</Option>
         </Select>
+        <DatePicker showTime />
+        <RangePicker showTime={{ format: "HH:mm" }} format="YYYY-MM-DD HH:mm" />
         <Table dataSource={dataSource} columns={columns} size="small" />
     </div>
 );

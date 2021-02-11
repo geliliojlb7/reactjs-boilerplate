@@ -212,6 +212,20 @@ module.exports = override(
             "@select-multiple-item-disabled-color": "#bfbfbf",
             "@select-multiple-item-disabled-border-color":
                 "@select-border-color",
+
+            // TimePicker
+            // ---
+            "@picker-bg": "@component-background",
+            "@picker-basic-cell-hover-color": "@item-hover-bg",
+            "@picker-basic-cell-active-with-range-color": "@primary-1",
+            "@picker-basic-cell-hover-with-range-color":
+                "lighten(@primary-color, 35%)",
+            "@picker-basic-cell-disabled-bg": "@disabled-bg",
+            "@picker-border-color": "@border-color-split",
+            "@picker-date-hover-range-border-color":
+                "lighten(@primary-color, 20%)",
+            "@picker-date-hover-range-color":
+                "@picker-basic-cell-hover-with-range-color",
         },
     }),
 );
